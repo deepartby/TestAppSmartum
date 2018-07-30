@@ -1,0 +1,10 @@
+<ul class="menu-wrapper">
+  <li *ngFor="let state of states">
+    <div class="badge" [ngClass]="{'active': state.route === this.location.path()}"></div>
+    <a routerLink="{{state.route}}" [ngClass]="{'activelink': state.route === this.location.path()}">
+      <img src="../../assets{{state.route}}.png">
+      <span>{{ state.name}}</span>
+      {{test}}
+    </a>
+  </li>
+</ul>
