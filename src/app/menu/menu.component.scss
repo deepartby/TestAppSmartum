@@ -1,0 +1,44 @@
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #2185a6;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0.3;
+    img {
+      margin: 0 5% 0 10%;
+    }
+  }& .activelink {
+    opacity: 1.0;
+  }
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 66px;
+  }
+
+  .badge {
+    display: none;
+    position: absolute;
+    left: 1px;
+    width: 3px;
+    height: 60px;
+    background-color: white;
+  }
+  .active {
+    display: block;
+  }
+}
+
