@@ -1,7 +1,7 @@
 import { State } from '../models/state';
 
 export const STATES: State[] = [
-  { route: '/userList', name: 'User List' },
+  { route: '/usersList', name: 'Users List' },
   { route: '/daily', name: 'Daily' },
   { route: '/brainstorm', name: 'Brainstorm' },
   { route: '/course', name: 'Course' },
