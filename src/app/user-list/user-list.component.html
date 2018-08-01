@@ -25,35 +25,35 @@
 
       <ng-container matColumnDef="email">
         <mat-header-cell *matHeaderCellDef> E-Mail </mat-header-cell>
-        <mat-cell *matCellDef="let user"> {{user.email}} </mat-cell>
+        <mat-cell *matCellDef="let user" (click)="openDialog(user)"> {{user.email}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="name">
         <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-        <mat-cell *matCellDef="let user"> {{user.name}} </mat-cell>
+        <mat-cell *matCellDef="let user" (click)="openDialog(user)"> {{user.name}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="type">
         <mat-header-cell *matHeaderCellDef> Phone </mat-header-cell>
-        <mat-cell *matCellDef="let user"> {{user.type}} </mat-cell>
+        <mat-cell *matCellDef="let user" (click)="openDialog(user)"> {{user.type}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="company">
         <mat-header-cell *matHeaderCellDef> Company </mat-header-cell>
-        <mat-cell *matCellDef="let user"> {{user.company}} </mat-cell>
+        <mat-cell *matCellDef="let user" (click)="openDialog(user)"> {{user.company}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="country">
         <mat-header-cell *matHeaderCellDef> Country </mat-header-cell>
-        <mat-cell *matCellDef="let user"> {{user.country}} </mat-cell>
+        <mat-cell *matCellDef="let user" (click)="openDialog(user)"> {{user.country}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="subscription">
         <mat-header-cell *matHeaderCellDef> Subscription </mat-header-cell>
-        <mat-cell *matCellDef="let user">
-          {{user.subscription.getFullYear()}}-
-          {{user.subscription.getMonth()}}-
-          {{user.subscription.getDay()}}
+        <mat-cell *matCellDef="let user" (click)="openDialog(user)">
+          {{user.subscription.getDay()}}/
+          {{user.subscription.getMonth()}}/
+          {{user.subscription.getFullYear()}}
         </mat-cell>
       </ng-container>
 

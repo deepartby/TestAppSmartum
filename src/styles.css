@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
   font-size: 13px;
+}
+mat-dialog-container {
+  padding: 20px 20px 0 20px !important;
+  overflow: hidden !important;
 }

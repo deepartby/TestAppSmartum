@@ -10,4 +10,8 @@ export class UserService {
   getUsers(): Observable<User[]> {
     return of(USERS);
   }
+  saveUser(updateUser): Observable<User> {
+    // saveUser
+    return of(updateUser);
+  }
 }
