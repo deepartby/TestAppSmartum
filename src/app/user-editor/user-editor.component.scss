@@ -1,0 +1,103 @@
+.modal {
+  .wrapper-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    button {
+      height: 18px;
+      width: 18px;
+      border: 0;
+      background-color: #ffffff;
+      background-image: url('../../assets/close.png');
+    }
+  }
+  .modal-edit {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    span:first-child {
+      font-size: 15px;
+      color: #feb31c;
+      text-transform: uppercase;
+    }
+    span:last-child {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: lowercase;
+    }
+  }
+  .mat-dialog-content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #f4f4f4;
+    .input-info, .input-name, .input-work, .input-actions {
+      display: flex;
+      flex-direction: row;
+    }
+    .input-actions {
+      justify-content: flex-end;
+      margin-top: 15px;
+    }
+    .wrapper-field {
+      display: flex;
+      flex-direction: column;
+      label {
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 10px 0;
+      }
+      input {
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #e5e5eb;
+        padding-left: 5px;
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      margin-right: 24%;
+      font-weight: 700;
+      .data {
+        color: #feb31c;
+      }
+    }
+    .input-actions button {
+      color: #ffffff;
+      text-transform: uppercase;
+      height: 30px;
+      border: 1px solid #e5e5eb;
+      border-radius: 4px;
+      margin-left: 10px;
+    }
+    #reset, #revoke {
+      background-color: #c8c8c8;
+    }
+    #save {
+      background-color: #68c67c;
+    }
+    .input-name .wrapper-field {
+      width: 25%;
+    }
+    .input-work .wrapper-field {
+      width: 50%;
+    }
+    .input-info .wrapper-field {
+      width: 24%;
+    }
+    #mail {
+      width: 50%;
+    }
+    #name {
+      margin: 0 10px;
+    }
+    #country, #type {
+      margin-right: 10px;
+    }
+    #coins, #validated {
+      margin-left: 10px;
+    }
+  }
+}
+

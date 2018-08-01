@@ -1,0 +1,63 @@
+<div class="modal">
+  <div class="wrapper-header">
+    <div class="modal-edit">
+      <span>EDIT {{ user.name}}</span>
+      <span>unique ID - {{ user.id }}</span>
+    </div>
+    <button id="close" (click)="onNoClick()"></button>
+  </div>
+  <div mat-dialog-content>
+    <div class="input-name">
+      <div id="mail" class="wrapper-field">
+        <label>e-mail</label>
+        <input matInput [(ngModel)]="user.email">
+      </div>
+      <div id="name" class="wrapper-field">
+        <label>first name</label>
+        <input matInput [(ngModel)]="user.name">
+      </div>
+      <div id="lastname" class="wrapper-field">
+        <label>last name</label>
+        <input matInput [(ngModel)]="user.lastname">
+      </div>
+    </div>
+    <div class="input-work">
+      <div id="country" class="wrapper-field">
+        <label>country</label>
+        <input matInput [(ngModel)]="user.country">
+      </div>
+      <div id="company" class="wrapper-field">
+        <label>company</label>
+        <input matInput [(ngModel)]="user.company">
+      </div>
+    </div>
+    <div class="input-info">
+      <div id="type" class="wrapper-field">
+        <label>type</label>
+        <input matInput [(ngModel)]="user.type">
+      </div>
+      <div id="level" class="wrapper-field">
+        <label>level</label>
+        <input matInput [(ngModel)]="user.level">
+      </div>
+      <div id="validated" class="wrapper-field">
+        <label>validated</label>
+        <input matInput [(ngModel)]="user.validated">
+      </div>
+      <div id="coins" class="wrapper-field">
+        <label>coins</label>
+        <input matInput [(ngModel)]="user.coins">
+      </div>
+    </div>
+    <div id="actions" class="input-actions">
+      <div id="info" class="info">
+        <span>Subscription type - <span class="data">99.99</span></span>
+        <span>Subscription date - <span class="data">{{user.subscription.getDay()}}/{{user.subscription.getMonth()}}/{{user.subscription.getFullYear()}}</span></span>
+      </div>
+      <button id="reset" (click)="onNoClick()">reset password</button>
+      <button id="revoke" (click)="onNoClick()">revoke access</button>
+      <button id="save" [mat-dialog-close]="user">save</button>
+    </div>
+  </div>
+</div>
+
